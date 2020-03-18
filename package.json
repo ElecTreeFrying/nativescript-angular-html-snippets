@@ -6,7 +6,7 @@
         "email": "jjgermitano@gmail.com"
     },
     "displayName": "Nativescript: Angular HTML Snippets",
-    "description": "This extension adds all HTML Nativescript UI Components, Layouts and Gestures snippets.",
+    "description": "This extension adds all Nativescript UI Components, Layouts and Gestures snippets in your HTML.",
     "version": "0.1.1",
     "icon": "images/ns-ng.png",
     "categories": [
@@ -16,7 +16,7 @@
         "nativescript",
         "snippets",
         "anuglar",
-        "snipet"
+        "html"
     ],
     "galleryBanner": {
         "color": "#494949",

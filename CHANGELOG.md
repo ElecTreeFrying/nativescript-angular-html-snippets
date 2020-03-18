@@ -1,8 +1,18 @@
 # Change Log
 
-## v0.1.1 (2020-3-18)
+## v0.1.2 (2020-3-18)
 
-- Initial release
+### Added
+
+- more demos and exampls in reference .md
+- updated README
+- removed snippet in keywords and added html
+
+### Changes
+
+- remove typos in CHANGELOG
+
+## v0.1.1 (2020-3-18)
 
 ### Fixes
 

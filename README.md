@@ -2,31 +2,50 @@
 
 **Updated for Nativescript v6.4.0 and Angular v9.0.0 release**
 
-This extension adds all HTML Nativescript UI Components, Layouts and Gestures snippets.
+This extension adds all Nativescript UI Components, Layouts and Gestures snippets in your HTML.
 
 ## Features
 
-* Default syntax - Plain Nativescript tag.
-* Property syntax - Includes all properties from Angular Nativescript [documentation].
-* Complete syntax - Includes all properties, all events and documentation.
+* Default syntax (Plain Nativescript tag)
+* Property syntax (Includes all element properties)
+* Complete syntax (Includes all element properties, events and documentation)
 * Layout snippets
 * Gesture snippets
 * System Icon snippets
 
-### Description
+For more examples and demo, [see here][snippet-reference].
 
-|                 | snippet    | entered by user | output                     | description                              |
-| --------------- | ---------------- | --------- | -------------------------- | -----------------------------------------|
-| default         | `ns-button`      | `nsbutt`  | `<Button></Button>`        | plain                                    |
-| property (prop) | `ns-button-prop` | `nsbutpr` | with *prop                 | With all properties                      |
-| complete (comp) | `ns-button-comp` | `nsbu-c`  | with *prop, *events, *docs | All properties, events and documentation |
-| layout snippets | `ns-dock-layout-snippet-2`   | `nsdocnip2`  | [snippet 2] | Sample snippet from [site docs].         |
-| gestures        | `ns-tap`         | `nstap`   | `(tap)=""`                 | Gesture Snippets                         |
-| setting icon    | `ns-icon-stop`   | `nsicost` | `14`                       | [Setting Icon] snippets                  |
+## Syntax
 
-For complete snippet reference and more examples [check this].
+| Suffix              | Description    | Output                                  |
+| ------------------- | -------------- | --------------------------------------- |
+| `-prop`             | property       | + all element properties                |
+| `-comp`             | complete       | + all element properties and events     |
+| `-snippet-[number]` | layout snippet | Layout snippets available in site docs  |
 
-### `ns-button`: In Action
+## Usage
+
+|                 | snippet    | entered by user | output                      | description                           |
+| --------------- | ---------------- | --------- | --------------------------- | ------------------------------------- |
+| default         | `ns-button`      | `nsbutt`  | `<Button></Button>`         | Plain tag                             |
+| property (prop) | `ns-button-prop` | `nsbutpr` | with *props                 | + All properties                      |
+| complete (comp) | `ns-button-comp` | `nsbu-c`  | with *props, *events, *docs | + All properties, events and API docs |
+| layout snippets | `ns-dock-layout-snippet-2`   | `nsdocnip2`  | see below    | Sample snippets from [site docs].     |
+| gestures        | `ns-tap`         | `nstap`   | `(tap)=""`                  | Gesture Snippets                      |
+| setting icon    | `ns-icon-stop`   | `nsicost` | `14`                        | [Setting Icon] snippets               |
+
+### In Action: `ns-dock-layout-snippet-2`
+
+``` html
+<DockLayout width="210" height="210" backgroundColor="lightgray" stretchLastChild="true">
+  <Label text="left" dock="left" backgroundColor="red"></Label>
+  <Label text="top" dock="top" backgroundColor="green"></Label>
+  <Label text="right" dock="right" backgroundColor="blue"></Label>
+  <Label text="bottom" dock="bottom" backgroundColor="yellow"></Label>
+</DockLayout>
+```
+
+### In Action: `ns-button`
 
 #### Default output
 
@@ -64,24 +83,17 @@ layoutChanged	Emitted when the layout bounds of a view changes due to layout pro
  -->
 ```
 
-### `ns-dock-layout-snippet-2`: In Action
+## Demo
 
-``` html
-<DockLayout width="210" height="210" backgroundColor="lightgray" stretchLastChild="true">
-  <Label text="left" dock="left" backgroundColor="red"></Label>
-  <Label text="top" dock="top" backgroundColor="green"></Label>
-  <Label text="right" dock="right" backgroundColor="blue"></Label>
-  <Label text="bottom" dock="bottom" backgroundColor="yellow"></Label>
-</DockLayout>
-```
-
-### Demo
-
-HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _complete_ (comp) syntax demo.
+**HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _complete_ (comp) syntax demo.**
 
 ![nativescript-angular-html-snippet-demo](images/playback.gif "Nativescript: Angular HTML Snippets demo")
 
-### Snippets: User Interface > Layouts
+## Snippets
+
+For complete references examples and demo, [see here][snippet-reference].
+
+### User Interface > Layouts
 
 * ns-absolute-layout
 * ns-dock-layout
@@ -90,7 +102,7 @@ HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _comple
 * ns-wrap-layout
 * ns-flexbox-layout
 
-### Snippets: User Interface > Components
+### User Interface > Components
 
 * ns-actionbar
 * ns-actionbarextension
@@ -124,7 +136,7 @@ HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _comple
 * ns-time-picker
 * ns-web-view
 
-### Snippets: Gestures
+### Gestures
 
 | Snippet        | Output           |
 |----------------|------------------|
@@ -137,7 +149,7 @@ HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _comple
 | `ns-rotation`  | `(rotation)=""`  |
 | `ns-touch`     | `(touch)=""`     |
 
-### Snippets: Setting Icons
+### Setting Icons
 
 | Snippet          | Output |
 |------------------|--------|
@@ -190,7 +202,7 @@ See [CHANGELOG] for more information.
 MIT
 
 [Link]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/reference.md
-[check this]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/reference.md
+[snippet-reference]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/reference.md
 [documentation]: https://docs.nativescript.org/angular/start/introduction
 [Setting Icon]: https://docs.nativescript.org/angular/ui/action-bar#setting-icons
 [snippet 2]: https://docs.nativescript.org/angular/ui/layouts/layout-containers#docklayout
