@@ -1,65 +1,202 @@
-# nativescript-angular-snippets README
+# Nativescript: Angular HTML Snippets (vscode extension)
 
-This is the README for your extension "nativescript-angular-snippets". After writing up a brief description, we recommend including the following sections.
+**Updated for Nativescript v6.4.0 and Angular v9.0.0 release**
+
+This extension adds all HTML Nativescript UI Components, Layouts and Gestures snippets.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* Default syntax - Plain Nativescript tag.
+* Property syntax - Includes all properties from Angular Nativescript [documentation].
+* Complete syntax - Includes all properties, all events and documentation.
+* Layout snippets
+* Gesture snippets
+* System Icon snippets
 
-For example if there is an image subfolder under your extension project workspace:
+### Description
 
-\!\[feature X\]\(images/feature-x.png\)
+|                 | snippet    | entered by user | output                     | description                              |
+| --------------- | ---------------- | --------- | -------------------------- | -----------------------------------------|
+| default         | `ns-button`      | `nsbutt`  | `<Button></Button>`        | plain                                    |
+| property (prop) | `ns-button-prop` | `nsbutpr` | with *prop                 | With all properties                      |
+| complete (comp) | `ns-button-comp` | `nsbu-c`  | with *prop, *events, *docs | All properties, events and documentation |
+| layout snippets | `ns-dock-layout-snippet-2`   | `nsdocnip2`  | [snippet 2] | Sample snippet from [site docs].         |
+| gestures        | `ns-tap`         | `nstap`   | `(tap)=""`                 | Gesture Snippets                         |
+| setting icon    | `ns-icon-stop`   | `nsicost` | `14`                       | [Setting Icon] snippets                  |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+For complete snippet reference and more examples [check this].
 
-## Requirements
+### `ns-button`: In Action
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+#### Default output
 
-## Extension Settings
+``` html
+<Button></Button>
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### Property output
 
-For example:
+``` html
+<Button text=""></Button>
+```
 
-This extension contributes the following settings:
+#### Complete output
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+``` html
+<Button
+  text="string"
+  (tap)=""
+  (loaded)=""
+  (unloaded)=""
+  (layoutChanged)="">
+</Button>
+<!--
+Properties
+NAME	TYPE	  DESCRIPTION
+text	string	Gets or sets the label of the button.
 
-## Known Issues
+Events
+NAME	        DESCRIPTION
+tap	          Emitted when the button is tapped.
+loaded	      Emitted when the view is loaded.
+unloaded	    Emitted when the view is unloaded.
+layoutChanged	Emitted when the layout bounds of a view changes due to layout processing.
+ -->
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### `ns-dock-layout-snippet-2`: In Action
 
-## Release Notes
+``` html
+<DockLayout width="210" height="210" backgroundColor="lightgray" stretchLastChild="true">
+  <Label text="left" dock="left" backgroundColor="red"></Label>
+  <Label text="top" dock="top" backgroundColor="green"></Label>
+  <Label text="right" dock="right" backgroundColor="blue"></Label>
+  <Label text="bottom" dock="bottom" backgroundColor="yellow"></Label>
+</DockLayout>
+```
 
-Users appreciate release notes as you update your extension.
+### Demo
 
-### 1.0.0
+HTML snippet `ns-text-field` in action; _default_, _property_ (prop) and _complete_ (comp) syntax demo.
 
-Initial release of ...
+![nativescript-angular-html-snippet-demo](images/playback.gif "Nativescript: Angular HTML Snippets demo")
 
-### 1.0.1
+### Snippets: User Interface > Layouts
 
-Fixed issue #.
+* ns-absolute-layout
+* ns-dock-layout
+* ns-grid-layout
+* ns-stack-layout
+* ns-wrap-layout
+* ns-flexbox-layout
 
-### 1.1.0
+### Snippets: User Interface > Components
 
-Added features X, Y, and Z.
+* ns-actionbar
+* ns-actionbarextension
+* ns-actionitem
+* ns-navigationbutton
+* ns-activityindicator
+* ns-button
+* ns-datepicker
+* ns-formattedstring
+* ns-htmlview
+* ns-image
+* ns-label
+* ns-listpicker
+* ns-listview
+* ns-progress
+* ns-scroll-view
+* ns-search-bar
+* ns-segmented-bar
+* ns-segmented-bar-item
+* ns-slider
+* ns-switch
+* ns-bottom-navigation
+* ns-tab-strip
+* ns-tab-strip-item
+* ns-tab-content-item
+* ns-tabs
+* ns-tab-view
+* ns-tab-view-item
+* ns-text-field
+* ns-text-view
+* ns-time-picker
+* ns-web-view
 
------------------------------------------------------------------------------------------------------------
+### Snippets: Gestures
 
-## Working with Markdown
+| Snippet        | Output           |
+|----------------|------------------|
+| `ns-tap`       | `(tap)=""`       |
+| `ns-doubleTap` | `(doubleTap)=""` |
+| `ns-longPress` | `(longPress)=""` |
+| `ns-swipe`     | `(swipe)=""`     |
+| `ns-pan`       | `(pan)=""`       |
+| `ns-pinch`     | `(pinch)=""`     |
+| `ns-rotation`  | `(rotation)=""`  |
+| `ns-touch`     | `(touch)=""`     |
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+### Snippets: Setting Icons
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+| Snippet          | Output |
+|------------------|--------|
+|`ns-icon-action`  | `9`    |
+|`ns-icon-undo`    | `21`   |
 
-### For more information
+#### List
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+|	ICON	        | VALUE |	ICON        | VALUE |
+|---------------|-------|-------------|-------|
+| Done		      | 0	    |	Search      | 12    |
+| Cancel	      | 1	    |	Refresh     | 13    |
+| Edit		      | 2	    |	Stop        | 14    |
+| Save		      | 3	    |	Camera      | 15    |
+| Add		        | 4	    |	Trash       | 16    |
+| FlexibleSpace | 5	    |	Play        | 17    |
+| FixedSpace	  | 6	    |	Pause       | 18    |
+| Compose		    | 7	    |	Rewind      | 19    |
+| Reply		      | 8	    |	FastForward | 20    |
+| Action		    | 9	    |	Undo        | 21    |
+| Organize		  | 10    |	Redo        | 22    |
+| Bookmarks		  | 11    |	PageCurl    | 23    |
 
-**Enjoy!**
+Reference: https://docs.nativescript.org/angular/ui/action-bar#setting-icons
+
+## Installation
+
+  1. Install Visual Studio Code v1.30.0 or higher
+  1. Launch Code
+  1. From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX)
+  1. Select Install Extensions
+  1. Choose **Nativescript: Angular HTML Snippets** by _ElecTreeFrying_
+  1. Reload Visual Studio Code
+
+## Changelog
+
+See [CHANGELOG] for more information.
+
+## Contributing
+
+* File bugs, feature requests in [GitHub Issues].
+* Leave a review on [Visual Studio Marketplace].
+
+## Related
+
+[More extensions of mine]
+
+## License
+
+MIT
+
+[Link]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/reference.md
+[check this]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/reference.md
+[documentation]: https://docs.nativescript.org/angular/start/introduction
+[Setting Icon]: https://docs.nativescript.org/angular/ui/action-bar#setting-icons
+[snippet 2]: https://docs.nativescript.org/angular/ui/layouts/layout-containers#docklayout
+[site docs]: https://docs.nativescript.org/angular/ui/layouts/layout-containers#docklayout
+
+[CHANGELOG]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/changelog
+[Github Issues]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/issues
+[Visual Studio Marketplace]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets&ssr=false#review-details
+[More extensions of mine]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying

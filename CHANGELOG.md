@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "nativescript-angular-snippets" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## v0.1.0 (2020-3-17)
 
 - Initial release

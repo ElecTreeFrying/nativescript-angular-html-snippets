@@ -1,19 +1,58 @@
 {
-    "name": "nativescript-angular-snippets",
-    "displayName": "Nativescript Angular Snippets",
-    "description": "test",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.43.0"
+    "name": "nativescript-angular-html-snippets",
+    "publisher": "ElecTreeFrying",
+    "author": {
+        "name": "John James Ermitaño",
+        "email": "jjgermitano@gmail.com"
     },
+    "displayName": "Nativescript: Angular HTML Snippets",
+    "description": "This extension adds all HTML Nativescript UI Components, Layouts and Gestures snippets.",
+    "version": "0.0.1",
+    "icon": "images/ns-ns.png",
     "categories": [
         "Snippets"
     ],
+    "keywords": [
+		"nativescript",
+		"snippets",
+		"anuglar",
+		"snipet"
+	],
+	"galleryBanner": {
+		"color": "#494949",
+		"theme": "dark"
+    },
+    "homepage": "https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/blob/master/README.md",
+    "readme": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ElecTreeFrying/nativescript-angular-html-snippets.git"
+	},
+	"bugs": {
+		"email": "electreefrying.git@gmail.com",
+		"url": "https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/issues"
+	},
+	"license": "MIT",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
     "contributes": {
         "snippets": [
             {
                 "language": "html",
-                "path": "./snippets/snippet.json"
+                "path": "./snippets/ns-components.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/ns-layouts.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/ns-gestures.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/ns-settings-icon.json"
             }
         ]
     }
