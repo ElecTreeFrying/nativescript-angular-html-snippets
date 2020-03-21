@@ -7,7 +7,7 @@
     },
     "displayName": "Nativescript: Angular HTML Snippets",
     "description": "This extension adds all Nativescript UI Components, Layouts and Gestures snippets in your HTML.",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "icon": "images/ns-ng.png",
     "categories": [
         "Snippets"
