@@ -1,5 +1,11 @@
 # Change Log
 
+## v0.1.3 (2020-3-21)
+
+### Changes
+
+- updated README
+
 ## v0.1.2 (2020-3-18)
 
 ### Added

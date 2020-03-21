@@ -180,7 +180,7 @@ Reference: https://docs.nativescript.org/angular/ui/action-bar#setting-icons
   1. Install Visual Studio Code v1.30.0 or higher
   1. Launch Code
   1. From the command palette `Ctrl+Shift+P` (Windows, Linux) or `Cmd+Shift+P` (OSX)
-  1. Select Install Extensions
+  1. Select Install Extensions.
   1. Choose **Nativescript: Angular HTML Snippets** by _ElecTreeFrying_
   1. Reload Visual Studio Code
 
@@ -195,7 +195,7 @@ See [CHANGELOG] for more information.
 
 ## Related
 
-[More extensions of mine]
+[More extensions of mine.]
 
 ## License
 
@@ -211,4 +211,4 @@ MIT
 [CHANGELOG]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/changelog
 [Github Issues]: https://github.com/ElecTreeFrying/nativescript-angular-html-snippets/issues
 [Visual Studio Marketplace]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets&ssr=false#review-details
-[More extensions of mine]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
+[More extensions of mine.]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
